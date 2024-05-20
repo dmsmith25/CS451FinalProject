@@ -26,7 +26,14 @@ These were the versions of the packages we used during this project:
 *Since the data scraping portion of this project has been conducted, the D3Boards.com website requires a user login to browse their website. Because of this, the scraping code we provide in this project will not be entirely reproduceable.*  
 
 - Source: We scraped our data from the D3Boards.com website in the NESCAC reigon in Basketball. Specifically, the link we used for our searches was https://www.d3boards.com/index.php?topic=4491 with additional ".indexNumber" for what messages we were at on the blog.
+
 - Features:
   - User: a string of the username for the account that made the corresponding blog post
   - Date: a string of the date and time the post was made
   - Message: a string of the body of the blog post
+ 
+- Data Examples:
+  - Total Number of Posts Scraped: 30,641
+  - Number of Posts between 2012-2013 Season Through 2023-2024 Season (excluding 2020-2021 season due to covid): 18,870
+  - Number of Posts between 2012-2013 Season Through 2023-2024 Season That Include Middlebury, Amherst, or Williams (sample included in our evaluation): 10,849
+
