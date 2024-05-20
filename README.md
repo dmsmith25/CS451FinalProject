@@ -36,4 +36,27 @@ These were the versions of the packages we used during this project:
   - Total Number of Posts Scraped: 30,641
   - Number of Posts between 2012-2013 Season Through 2023-2024 Season (excluding 2020-2021 season due to covid): 18,870
   - Number of Posts between 2012-2013 Season Through 2023-2024 Season That Include Middlebury, Amherst, or Williams (sample included in our evaluation): 10,849
+ 
+- Data File:
+  - Our total data for this project is stored in nlp_project_data.csv and is included in our code  
+
+## Implementation
+- implementation.ipynb walks through the large steps of our bias evaluation while it uses our source.py file to carry out these proceses.
+- We start by loading in our data using our source.py file and visualizing it
+- Then we clean our data using the .cleanData() method in our source.py file to give us a dictionary of the different seasons posts where they mention Middlebury, Williams, or Amherst
+- Next, we train our Word2Vec word embedding models for all of the different seasons
+  - We use hyperparameters of vector_size=10, window=5, min_count=1, workers=4 that we optimized through trial and error with tweaking the params
+  - We generate a random seed from 1 to 1000 in the seed param for the models
+- Finally we conduct our evaluation:
+  - We use our models of each year (10 per year with seeding) to make sentiment scores for each team
+  - Sentiment scores are calculated using a formula involving cosine similarity as shown in our .getCosineSimScores() method in our source.py file within the BiasEval class
+  - We then graph these results in two seperate graphs:
+    - One graph shows all of the different sentiment scores for teams along with their team success
+    - The next graph shows the average of the models for each years sentiment scores and standardized to the smallest sentiment score that year.
+  - We conclude with a table showing the average sentiment scores of the teams and their average team success throughout the years  
+
+## Results
+- 
+
+ 
 
