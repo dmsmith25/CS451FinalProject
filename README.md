@@ -22,7 +22,11 @@ These were the versions of the packages we used during this project:
 
 ## Data
 
-*IMPORTANT NOTE*  
+*IMPORTANT NOTE:*  
 *Since the data scraping portion of this project has been conducted, the D3Boards.com website requires a user login to browse their website. Because of this, the scraping code we provide in this project will not be entirely reproduceable.*  
 
-- 
+- Source: We scraped our data from the D3Boards.com website in the NESCAC reigon in Basketball. Specifically, the link we used for our searches was https://www.d3boards.com/index.php?topic=4491 with additional ".indexNumber" for what messages we were at on the blog.
+- Features:
+  - User: a string of the username for the account that made the corresponding blog post
+  - Date: a string of the date and time the post was made
+  - Message: a string of the body of the blog post
