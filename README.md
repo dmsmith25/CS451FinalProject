@@ -56,7 +56,13 @@ These were the versions of the packages we used during this project:
   - We conclude with a table showing the average sentiment scores of the teams and their average team success throughout the years  
 
 ## Results
-- 
+- We visualize our results in our implementation.ipynb notebook
+- Our findings are as follows:
+  - Middlebury Avg Sentiment Score Difference: 0.005576
+  - Amherst Avg Sentiment Score Difference: 0.004680
+  - Williams Avg Sentiment Score Difference: 0.003061
+- Conclusions:
+  - Although our findings could be improved, we found evidence to suggest that Williams has a negative bias on D3Boards.com due to their high expectations over the years and inability to live up to those expectations.
 
  
 
